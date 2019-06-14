@@ -1,0 +1,8 @@
+name: LightBlocks
+main: io.obadiah.lb.LightBlocks
+version: 1.0-SNAPSHOT
+authors:
+  - Obadiah Crowe
+description: Adds custom light-modified block crafting recipes.
+depend:
+  - LightAPI
