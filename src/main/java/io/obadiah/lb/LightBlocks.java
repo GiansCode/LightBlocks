@@ -33,8 +33,7 @@ public class LightBlocks extends JavaPlugin {
         config.getBlocks().forEach(material -> {
             for (int i = 1; i < 9; i++) {
                 ItemStack stack = new ItemBuilder(material)
-                  .setLore(ChatColor.GRAY + "Light " + material.name().substring(0, 1).toUpperCase() +
-                    material.name().substring(1).replace("_", " ").toLowerCase() + " " + (int) (i * 1.875))
+                  .setLore(config.getLore(material) + " " + (int) (i * 1.875))
                   .setAmount(1)
                   .build();
 
