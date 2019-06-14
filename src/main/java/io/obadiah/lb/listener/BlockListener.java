@@ -25,12 +25,10 @@ public class BlockListener implements Listener {
         Integer lightLevel = new NBTItem(item).getInteger("HeldLightLevel");
 
         if (lightLevel == null) {
-            System.out.println("is null");
             return;
         }
 
         if (!LightBlocks.get().getLightConfig().getBlocks().contains(item.getType())) {
-            System.out.println("not type");
             return;
         }
 
